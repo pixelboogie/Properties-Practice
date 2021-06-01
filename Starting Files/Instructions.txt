@@ -1,0 +1,22 @@
+
+Practice Properties in C#
+
+1st Challenge
+--------------------------------------------------
+
+1. In the MediaType base class and Album, Book, and Movie subclasses, replace each public class field with a property.
+  a) Use either the regular C# property syntax or the more concise auto-implemented property syntax.
+  b) Use private setters for fields that should be readonly and initialize those properties via the constructor.
+
+2. In the MediaType base class, initialize the `Loanee` and `OnLoan` properties inline to an empty string (i.e. `""` or `string.Empty`) and `false` respectively.
+
+2nd Challenge
+--------------------------------------------------
+
+1. In each media type subclass, replace the `GetDisplayText()` method with a `DisplayText` computed property.
+  a) Use either the regular C# property syntax or the more concise expression-bodied property syntax.
+
+2. In the MediaLibrary class, add a `NumberOfItems` computed property that returns an integer representing the number of items in the media library.
+
+3. Update the Program.cs file as needed.
+  a) Also add code to the `Main()` method in order to test the new MediaLibrary `NumberOfItems` computed property.
