@@ -1,4 +1,4 @@
-namespace CSharp_Inheritance
+namespace Treehouse.MediaLibrary
 {
     class Album : MediaType
     {
