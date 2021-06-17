@@ -4,36 +4,36 @@ namespace Treehouse.MediaLibrary
 {
     class Program
     {
-        // static void Main()
-        // {
-        //     try
-        //     {
-        //         var mediaLibrary = new MediaLibrary(new MediaType[]
-        //         {
-        //             new Album("Yellow Submarine", "The Beatles"),
-        //             new Album("The Wall", "Pink Floyd"),
-        //             new Album("Pet Sounds", "The Beach Boys"),
-        //             new Book("Moby-Dick", "Herman Melville"),
-        //             new Movie("Lawrence of Arabia", "David Lean")
-        //         });
+         static void Main()
+         {
+            try
+            {
+                var mediaLibrary = new MediaLibrary(new MediaType[]
+                {
+                    new Album("Yellow Submarine", "The Beatles"),
+                    new Album("The Wall", "Pink Floyd"),
+                    new Album("Pet Sounds", "The Beach Boys"),
+                    new Book("Moby-Dick", "Herman Melville"),
+                    new Movie("Lawrence of Arabia", "David Lean")
+                });
                 
-        //         DetectMediaType(mediaLibrary.GetItemAt(0));
-        //         DetectMediaType(mediaLibrary.GetItemAt(1));
-        //         DetectMediaType(mediaLibrary.GetItemAt(2));
-        //         DetectMediaType(mediaLibrary.GetItemAt(3));
-        //         DetectMediaType(mediaLibrary.GetItemAt(4));
+                DetectMediaType(mediaLibrary.GetItemAt(0));
+                DetectMediaType(mediaLibrary.GetItemAt(1));
+                DetectMediaType(mediaLibrary.GetItemAt(2));
+                DetectMediaType(mediaLibrary.GetItemAt(3));
+                DetectMediaType(mediaLibrary.GetItemAt(4));
                 
-        //         Display(mediaLibrary.GetItemAt(0));
-        //         Display(mediaLibrary.GetItemAt(1));
-        //         Display(mediaLibrary.GetItemAt(2));
-        //         Display(mediaLibrary.GetItemAt(3));
-        //         Display(mediaLibrary.GetItemAt(4));                                
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         Console.WriteLine("Exception: " + ex.Message);
-        //     }            
-        // }
+                Display(mediaLibrary.GetItemAt(0));
+                Display(mediaLibrary.GetItemAt(1));
+                Display(mediaLibrary.GetItemAt(2));
+                Display(mediaLibrary.GetItemAt(3));
+                Display(mediaLibrary.GetItemAt(4));                                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception: " + ex.Message);
+            }            
+        }
 
         static void Display(MediaType item) 
         {
